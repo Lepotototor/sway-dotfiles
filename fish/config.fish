@@ -21,11 +21,6 @@ alias clear "printf '\033[2J\033[3J\033[1;1H'"
 alias q 'qs -c ii'
     
 
-# function fish_prompt
-#   set_color cyan; echo (pwd)
-#   set_color green; echo '> '
-# end
-
 ## Starship prompt
 if status --is-interactive
    source (starship init fish --print-full-init | psub)
@@ -153,7 +148,6 @@ alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 
 #neofetch --ascii ~/.config/fish/ascii_neofetch
 #neofetch
-fastfetch
+#fastfetch
 
-export PGDATA="$HOME/postgres_data"
-export PGHOST="/tmp"
+alias "ionis"="nmcli --ask connection up IONIS"
