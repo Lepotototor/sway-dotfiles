@@ -11,7 +11,6 @@ exec_always --no-startup-id autotiling
 exec_always --no-startup-id picom
 exec_always --no-startup-id dunst
 exec_always --no-startup-id polybar
-exec --no-startup-id alacritty -e sh ~/.config/i3/start.sh
 
 # invert scroll i3
 exec synclient VertScrollDelta=-79 synclient HorizScrollDelta=-79

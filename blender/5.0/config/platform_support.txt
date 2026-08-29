@@ -1,1 +1,0 @@
-{AMD/AMD Radeon 780M Graphics (radeonsi, phoenix, LLVM 21.1.6, DRM 3.64, 6.16.0-273-tkg-eevdf)/4.6 (Core Profile) Mesa 25.3.3-arch1.1}=SUPPORTED

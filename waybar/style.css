@@ -1,0 +1,180 @@
+/* ===========================
+ *  Palette & constantes
+ * =========================== */
+
+/* Rose pâle uni pour toute la barre, rose plus soutenu pour les tuiles,
+   marron pour le texte partout. */
+@define-color base-bg #ffc2dc;
+@define-color base-bg-solid #ffc2dc;
+@define-color tile-bg #f285ae;
+@define-color tile-bg-hover #ec6fa0;
+
+@define-color fg-brown #5c3a2e;
+@define-color fg-brown-light #7a4f3d;
+
+@define-color ws-bg @tile-bg;
+@define-color ws-bg-active #7e9286;
+@define-color ws-bg-urgent #b5637f;
+
+@define-color ws-fg @fg-brown;
+@define-color ws-fg-active @base-bg;
+@define-color ws-fg-urgent #fbe4ea;
+
+@define-color mpris-border @tile-bg;
+
+@define-color cpu-fg @fg-brown;
+@define-color mem-fg @fg-brown;
+@define-color clock-fg @fg-brown;
+@define-color clock-simple-fg @fg-brown;
+@define-color window-fg @fg-brown;
+@define-color audio-fg @fg-brown;
+@define-color audio-muted-fg @fg-brown-light;
+@define-color tray-fg @fg-brown;
+@define-color bluetooth-fg @fg-brown;
+@define-color battery-fg @fg-brown;
+@define-color logo-fg @fg-brown;
+@define-color cava-fg @fg-brown;
+@define-color screenshot-fg @fg-brown;
+@define-color colorpicker-fg @fg-brown;
+
+@define-color tooltip-bg @tile-bg;
+@define-color tooltip-border @fg-brown;
+@define-color sep-fg @fg-brown-light;
+
+/* ===========================
+ *  Global
+ * =========================== */
+
+window#waybar,
+window#waybar * {
+  min-height: 0;
+  min-width: 0;
+  font-family: "CaskaydiaCove Nerd Font", monospace;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+window#waybar {
+  background-color: @base-bg;
+}
+
+/* ===========================
+ *  Modules génériques
+ *  margin: 0 -> les tuiles se touchent, pas de fond "vide" entre elles
+ * =========================== */
+
+#clock,
+#pulseaudio,
+#tray,
+#bluetooth,
+#battery,
+#custom-logo,
+#custom-spotify,
+#custom-cava,
+#custom-notification,
+#custom-launcher,
+#custom-screenshot,
+#custom-colorpicker,
+#cpu,
+#network,
+#memory,
+#window,
+#mpris {
+  padding: 0.3rem 0.7rem;
+  margin: 0.35rem 0.25rem;
+  border-radius: 14px;
+  background-color: @tile-bg;
+  color: @fg-brown;
+}
+
+/* ===========================
+ *  Workspaces
+ * =========================== */
+
+#workspaces {
+  margin: 0;
+}
+
+#workspaces button {
+  padding: 0.3rem 0.6rem;
+  margin: 0.35rem 0.15rem;
+  border-radius: 14px;
+  background-color: @ws-bg;
+  color: @ws-fg;
+}
+
+#workspaces button:hover {
+  color: @ws-fg-active;
+  background-color: @tile-bg-hover;
+}
+
+#workspaces button.focused {
+  background-color: @ws-bg-active;
+  color: @ws-fg-active;
+  font-weight: 800;
+  padding: 0.3rem 0.9rem;
+}
+
+#workspaces button.urgent {
+  background-color: @ws-bg-urgent;
+  color: @ws-fg-urgent;
+}
+
+/* ===========================
+ *  MPRIS
+ * =========================== */
+
+#mpris.playing {
+  color: #3d2417;
+}
+
+#mpris.paused {
+  color: @fg-brown-light;
+}
+
+/* ===========================
+ *  États
+ * =========================== */
+
+#pulseaudio.muted {
+  color: @audio-muted-fg;
+}
+
+#clock.simpleclock {
+  color: @clock-simple-fg;
+}
+
+/* Icônes Font Awesome 6 Free (solid) : n'existent qu'en graisse 900 */
+#custom-screenshot,
+#custom-colorpicker {
+  font-family: "Font Awesome 6 Free", "CaskaydiaCove Nerd Font", monospace;
+  font-weight: 900;
+}
+
+/* ===========================
+ *  Divers
+ * =========================== */
+
+#custom-sep {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  color: @sep-fg;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+}
+
+/* ===========================
+ *  Tooltips
+ * =========================== */
+
+tooltip {
+  background-color: @tooltip-bg;
+  border: 2px solid @tooltip-border;
+}
+
+tooltip label {
+  color: @fg-brown;
+}

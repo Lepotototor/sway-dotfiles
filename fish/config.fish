@@ -79,11 +79,11 @@ end
 
 ## Useful aliases
 # Replace ls with exa
-alias ls='exa -al --color=always --group-directories-first --icons' # preferred listing
-alias la='exa -a --color=always --group-directories-first --icons'  # all files and dirs
-alias ll='exa -l --color=always --group-directories-first --icons'  # long format
-alias lt='exa -aT --color=always --group-directories-first --icons' # tree listing
-alias l.='exa -ald --color=always --group-directories-first --icons .*' # show only dotfiles
+alias ls='exa -al --color=always --group-directories-first --icons auto' # preferred listing
+alias la='exa -a --color=always --group-directories-first --icons auto'  # all files and dirs
+alias ll='exa -l --color=always --group-directories-first --icons auto'  # long format
+alias lt='exa -aT --color=always --group-directories-first --icons auto' # tree listing
+alias l.='exa -ald --color=always --group-directories-first --icons auto .*' # show only dotfiles
 alias ip='ip -color'
 
 # Replace some more things with better alternatives
@@ -146,8 +146,18 @@ alias jctl="journalctl -p 3 -xb"
 # Recent installed packages
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 
-#neofetch --ascii ~/.config/fish/ascii_neofetch
-#neofetch
-#fastfetch
+fastfetch
 
 alias "ionis"="nmcli --ask connection up IONIS"
+
+export PGDATA="$HOME/postgres_data"
+export PGHOST="/tmp"
+export PGPORT="5432"
+
+# BEGIN opam configuration
+# This is useful if you're using opam as it adds:
+#   - the correct directories to the PATH
+#   - auto-completion for the opam binary
+# This section can be safely removed at any time if needed.
+test -r '/home/lepotototor/.opam/opam-init/init.fish' && source '/home/lepotototor/.opam/opam-init/init.fish' > /dev/null 2> /dev/null; or true
+# END opam configuration

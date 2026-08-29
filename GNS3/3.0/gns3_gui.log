@@ -1,9 +1,0 @@
-2025-11-17 17:03:32 INFO logger.py:126 Log level: INFO
-2025-11-17 17:03:32 INFO main.py:270 GNS3 GUI version 3.0.5
-2025-11-17 17:03:32 INFO main.py:271 Copyright (c) 2007-2025 GNS3 Technologies Inc.
-2025-11-17 17:03:32 INFO main.py:272 Application started with /home/lepotototor/Work/NET/bin/gns3
-2025-11-17 17:03:32 INFO http_client.py:561 Authenticated with controller localhost on port 3080 
-2025-11-17 17:03:35 INFO controller.py:456 Listening for controller notifications on ws://localhost:3080/v3/notifications/ws
-2025-11-17 17:04:09 CRITICAL progress_dialog.py:181 ImportProjectWorker thread stopping with an error: '/home/lepotototor/GNS3/projects/bbe98af5-0d46-4c32-b631-6f72d082b3d7/project.gns3' does not exist on the controller
-2025-11-17 17:04:09 CRITICAL __init__.py:183 '/home/lepotototor/GNS3/projects/bbe98af5-0d46-4c32-b631-6f72d082b3d7/project.gns3' does not exist on the controller
-2025-11-17 17:04:33 INFO project.py:666 Listening for project notifications on ws://localhost:3080/v3/projects/28e38e80-3980-40b7-a068-d2b9c791ce48/notifications/ws

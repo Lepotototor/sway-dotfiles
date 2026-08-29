@@ -1,0 +1,312 @@
+/* ╭──────────────────────────────────────────╮
+│ SwayNC — Bubblegum Theme │
+│ Pink / Pale Pink / Chocolate │
+╰──────────────────────────────────────────╯ */
+
+/* ── Palette ─────────────────────────────── */
+
+@define-color pink-hot #ff4fa3;
+@define-color pink-bright #ff75b8;
+@define-color pink-soft #ffd1e5;
+@define-color pink-pale #ffe8f1;
+@define-color pink-dark #e83287;
+
+@define-color chocolate #5a302f;
+@define-color chocolate-soft #704342;
+@define-color chocolate-fade #956b69;
+
+@define-color white-pink #fff8fb;
+
+/* ── Global ───────────────────────────────── */
+
+{
+font-family: "Caskaydia Cove", "CaskaydiaCove Nerd Font", monospace;
+	color: @chocolate;
+	font-size: 18px;
+}
+
+/* ── Notification window ─────────────────── */
+
+notificationwindow,
+blankwindow {
+	background: transparent;
+	background-color: transparent;
+}
+
+/* ── Notification ────────────────────────── */
+
+.notification-row {
+	outline: none;
+	margin: 5px 0;
+}
+
+.notification-row:focus,
+.notification-row:hover {
+	background: transparent;
+}
+
+.notification {
+background: @pink-pale;
+border: 3px solid @pink-hot;
+border-radius: 18px;
+
+margin: 6px 12px;
+padding: 0;
+
+box-shadow:
+    0 5px 15px rgba(90, 48, 47, 0.15),
+    0 0 0 1px rgba(255, 79, 163, 0.08);
+
+
+}
+
+/* ── Notification content ────────────────── */
+
+.notification-content {
+background: transparent;
+padding: 12px;
+border-radius: 16px;
+}
+
+.summary {
+color: @chocolate;
+font-weight: bold;
+font-size: 20px;
+}
+
+.body {
+color: @chocolate-soft;
+font-size: 16px;
+}
+
+/* ── App name ─────────────────────────────── */
+
+.app-name {
+color: @pink-dark;
+font-weight: bold;
+font-size: 11px;
+}
+
+/* ── Close button ────────────────────────── */
+
+.close-button {
+background: @pink-hot;
+color: @white-pink;
+
+border: none;
+border-radius: 999px;
+
+min-width: 24px;
+min-height: 24px;
+
+margin-top: 10px;
+margin-right: 12px;
+
+box-shadow: 0 2px 6px rgba(90, 48, 47, 0.15);
+
+
+}
+
+.close-button:hover {
+background: @pink-dark;
+color: white;
+}
+
+/* ── Urgencies ───────────────────────────── */
+
+.low {
+background: #ffd0df;
+border-color: @pink-soft;
+}
+
+.normal {
+background: #ffd0df;
+border-color: @pink-hot;
+}
+
+.critical {
+background: #ff4fa3;
+border-color: @pink-dark;
+
+box-shadow:
+    0 0 0 2px rgba(232, 50, 135, 0.15),
+    0 6px 18px rgba(90, 48, 47, 0.2);
+
+
+}
+
+/* ── Images / icons ──────────────────────── */
+
+.notification-image {
+margin-right: 10px;
+border-radius: 12px;
+}
+
+.notification-icon {
+color: @pink-dark;
+}
+
+/* ── Actions ─────────────────────────────── */
+
+.notification-action {
+background: @pink-soft;
+color: @chocolate;
+
+border: 1px solid @pink-bright;
+border-radius: 12px;
+
+margin: 5px;
+padding: 7px 12px;
+
+font-weight: bold;
+
+
+}
+
+.notification-action:hover {
+background: @pink-hot;
+color: @white-pink;
+}
+
+/* ── Control Center ───────────────────────── */
+
+.control-center {
+background: rgba(255, 232, 241, 0.96);
+
+border: 2px solid @pink-hot;
+border-radius: 22px;
+
+padding: 12px;
+
+box-shadow:
+    0 10px 30px rgba(90, 48, 47, 0.18);
+
+
+}
+
+/* ── Control Center title ───────────────── */
+
+.control-center .widget-title {
+color: @chocolate;
+font-size: 18px;
+font-weight: bold;
+
+margin: 5px;
+padding: 8px;
+
+
+}
+
+.control-center .widget-title > button {
+background: @pink-hot;
+color: @white-pink;
+
+border: none;
+border-radius: 12px;
+
+padding: 6px 12px;
+
+font-weight: bold;
+
+
+}
+
+.control-center .widget-title > button:hover {
+background: @pink-dark;
+}
+
+/* ── Do Not Disturb ─────────────────────── */
+
+.widget-dnd {
+background: @pink-soft;
+
+border: 1px solid @pink-bright;
+border-radius: 14px;
+
+margin: 5px;
+padding: 8px;
+
+
+}
+
+.widget-dnd > switch {
+background: @pink-pale;
+border: 1px solid @pink-hot;
+}
+
+.widget-dnd > switch:checked {
+background: @pink-hot;
+}
+
+/* ── MPRIS ───────────────────────────────── */
+
+.widget-mpris {
+background: @pink-soft;
+border: 1px solid @pink-bright;
+border-radius: 16px;
+
+margin: 5px;
+padding: 10px;
+
+
+}
+
+.widget-mpris-player {
+color: @chocolate;
+}
+
+/* ── Buttons / generic widgets ───────────── */
+
+.widget-buttons-grid {
+background: transparent;
+padding: 5px;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button {
+background: @pink-soft;
+color: @chocolate;
+
+border: 1px solid @pink-bright;
+border-radius: 14px;
+
+margin: 4px;
+padding: 10px;
+
+
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button:hover {
+background: @pink-hot;
+color: @white-pink;
+}
+
+/* ── Scrollbars ──────────────────────────── */
+
+scrollbar {
+background: transparent;
+}
+
+scrollbar slider {
+background: @pink-bright;
+border-radius: 999px;
+min-width: 6px;
+}
+
+scrollbar slider:hover {
+background: @pink-hot;
+}
+
+/* ── Notification groups ─────────────────── */
+
+.notification-group {
+margin: 5px 0;
+}
+
+.notification-group-headers {
+color: @pink-dark;
+font-weight: bold;
+}
+
+.notification-group-icon {
+color: @pink-hot;
+}

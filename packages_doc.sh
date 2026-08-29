@@ -8,6 +8,23 @@ rofi # applications launcher
 swww # wallpaper manager
 wlogout # tiles for logout, poweroff, ...
 wl-clipboard
+waybar
+playerctl # for sound control
+pavucontrol # controler of sound
+grim # screenshot for sway
+slurp # screenshot for wayland
+hyprpicker # color picker for wayland
+
+i3-wm
+i3lock
+autotiling
+polybar
+picom
+dunst
+
+xdg-desktop-portal
+xdg-desktop-portal-wlr
+xdg-desktop-portal-gtk
 
 base
 base-devel # dev packages
@@ -34,11 +51,13 @@ ttf-nerd-fonts-symbols-mono
 fish # shell
 starship # shell prompt
 kitty # terminal emulator
+alacritty # terminal emulator
 bat # cat improved
 eza # ls improved
 fastfetch
 neovim
 vim
+helix
 ripgrep # grep extensions
 ripgrep-all
 git
@@ -51,6 +70,8 @@ gparted
 baobab
 bluez # bluetooth utils
 bluez-utils
+blueman
+blueberry-wayland
 game-devices-udev # game controller drivers
 imagemagick
 mpv # video viewer
@@ -65,6 +86,7 @@ efibootmgr
 grub
 os-prober
 networkmanager
+network-manager-applet
 pacman
 pacman-contrib
 pacman-mirrorlist
@@ -74,3 +96,6 @@ wireplumber
 plymouth # start screen loader
 sddm # lock screen
 reflector
+
+discord
+slack-desktop
