@@ -4,7 +4,7 @@ swaync # notification daemon maybe dunst
 swaylock-effects # lock screen
 swayimg # img viewer for sway
 sway-contrib # user scripts forr sway
-rofi # applications launcher
+rofi-lbonn-wayland-git # applications launcher
 swww # wallpaper manager
 wlogout # tiles for logout, poweroff, ...
 wl-clipboard
@@ -97,5 +97,17 @@ plymouth # start screen loader
 sddm # lock screen
 reflector
 
+noto-fonts
+noto-fonts-emoji
+python-fonttools
+texlive-fontsextra
+texlive-fontsrecommended
+texlive-fontutils
+ttf-nerd-fonts-symbols
+ttf-nerd-fonts-symbols-common
+ttf-nerd-fonts-symbols-mono
+
 discord
 slack-desktop
+spotify
+kdeconnect
