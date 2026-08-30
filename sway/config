@@ -12,10 +12,11 @@ exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DE
 exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XDG_SESSION_TYPE
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY DISPLAY XDG_CURRENT_DESKTOP XDG_SESSION_TYPE
 
-# Invert scroll (Natural Scrolling pour Wayland)
 input "type:touchpad" {
     natural_scroll enabled
+    click_method clickfinger
 }
+
 bindgesture swipe:3:right workspace prev
 bindgesture swipe:3:left workspace next
 
