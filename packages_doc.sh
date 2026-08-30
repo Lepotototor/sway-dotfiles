@@ -1,10 +1,11 @@
-sway
+swayfx
 autotiling # manage autotiling 
 swaync # notification daemon maybe dunst
 swaylock-effects # lock screen
 swayimg # img viewer for sway
 sway-contrib # user scripts forr sway
-rofi-lbonn-wayland-git # applications launcher
+swaybg # sway background manager
+rofi # applications launcher
 swww # wallpaper manager
 wlogout # tiles for logout, poweroff, ...
 wl-clipboard
@@ -14,6 +15,7 @@ pavucontrol # controler of sound
 grim # screenshot for sway
 slurp # screenshot for wayland
 hyprpicker # color picker for wayland
+brightnessctl
 
 i3-wm
 i3lock
