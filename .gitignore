@@ -70,7 +70,6 @@ micro/
 mimeapps.list
 neofetch/
 netlify/
-nvim/
 occt/
 ow-electron/
 pavucontrol-qt/
@@ -100,7 +99,6 @@ thorium-flags.conf
 trashrc
 user-dirs.dirs
 user-dirs.locale
-waybar/
 wofi/
 xdg-desktop-portal-kderc
 xsettingsd/
@@ -149,3 +147,31 @@ RStudio/
 Rambox/
 VirtualBox/
 autostart/
+BambuStudio/
+Code - OSS/
+GNS3/
+Kvantum/
+LyX
+Slack/
+blender/
+darklyrc
+discordcanary/
+fcitx5/
+foot
+gdb
+hypr
+hyprpanel/
+ktrashrc
+kwinrulesrc
+lazygit
+mpv
+okularpartrc
+okularrc
+pavucontrol.ini
+qt5ct/
+qt6ct/
+quickshell/
+songrec/
+tree-sitter/
+waydroid-helper/
+wlogout/
