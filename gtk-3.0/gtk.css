@@ -1,0 +1,47 @@
+/* ~/.config/gtk-3.0/gtk.css
+ * Surcharge des couleurs nommées d'Adwaita (GTK3) — même palette que
+ * Neovim/kitty/waybar (rosewood). Garde gtk-theme-name=Adwaita dans
+ * settings.ini, ce fichier se charge par-dessus.
+ */
+
+@define-color theme_bg_color            #fbe0ea;
+@define-color theme_fg_color             #4a2f24;
+@define-color theme_base_color           #fbe0ea;
+@define-color theme_text_color           #4a2f24;
+@define-color theme_selected_bg_color    #2e5f74;
+@define-color theme_selected_fg_color    #fbe0ea;
+@define-color theme_unfocused_bg_color   #f7d0e0;
+@define-color theme_unfocused_fg_color   #4a2f24;
+@define-color insensitive_bg_color       #f7d0e0;
+@define-color insensitive_fg_color       #8a6a5b;
+@define-color borders                    #f285ae;
+@define-color unfocused_borders          #f7d0e0;
+
+/* Barre de titre / en-têtes */
+headerbar, .titlebar {
+  background-color: #f285ae;
+  color: #4a2f24;
+  box-shadow: none;
+  border: none;
+}
+
+/* Boutons */
+button {
+  background-color: #f285ae;
+  color: #4a2f24;
+  border-radius: 10px;
+  border: none;
+}
+button:hover {
+  background-color: #e06b95;
+}
+button:active, button:checked {
+  background-color: #2e5f74;
+  color: #fbe0ea;
+}
+
+/* Barres de progression / curseurs de sliders */
+progressbar > trough > progress,
+scale > slider {
+  background-color: #2e5f74;
+}

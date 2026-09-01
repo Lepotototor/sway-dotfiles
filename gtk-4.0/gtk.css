@@ -1,0 +1,35 @@
+/* ~/.config/gtk-4.0/gtk.css
+ * Surcharge des couleurs nommées de libadwaita (GTK4) — mêmes noms que
+ * définit tout thème/app Adwaita moderne (org.gnome.*, nautilus, etc.)
+ */
+
+@define-color accent_color          #2e5f74;
+@define-color accent_bg_color       #2e5f74;
+@define-color accent_fg_color       #fbe0ea;
+
+@define-color window_bg_color       #fbe0ea;
+@define-color window_fg_color       #4a2f24;
+@define-color view_bg_color         #fbe0ea;
+@define-color view_fg_color         #4a2f24;
+
+@define-color headerbar_bg_color    #f285ae;
+@define-color headerbar_fg_color    #4a2f24;
+@define-color headerbar_border_color #e06b95;
+
+@define-color card_bg_color         #f7d0e0;
+@define-color card_fg_color         #4a2f24;
+
+@define-color popover_bg_color      #f7d0e0;
+@define-color popover_fg_color      #4a2f24;
+
+@define-color sidebar_bg_color      #f7d0e0;
+@define-color sidebar_fg_color      #4a2f24;
+
+@define-color destructive_bg_color  #b23a48;
+@define-color destructive_fg_color  #fbe0ea;
+
+@define-color success_bg_color      #2f6b4f;
+@define-color success_fg_color      #fbe0ea;
+
+@define-color warning_bg_color      #c9822e;
+@define-color warning_fg_color      #4a2f24;

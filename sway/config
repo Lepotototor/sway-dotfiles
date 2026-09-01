@@ -70,10 +70,11 @@ client.background        $base
 
 # Remplacement de dex/xss-lock pour le verrouillage (Swaylock & Swayidle)
 exec swayidle -w \
-         timeout 300 'swaylock -c 191724' \
-         before-sleep 'swaylock -c 191724'
+         timeout 300 'swaylock -c 191724 -f' \
+         timeout 600 'systemctl suspend' \
+         before-sleep 'swaylock -c 191724 -f'
 
-bindsym XF86PowerOff exec swaylock -c 191724 && systemctl suspend
+bindsym XF86PowerOff exec swaylock -c 191724 -f & systemctl suspend
 
 # Applet réseau
 exec nm-applet --indicator
