@@ -146,13 +146,20 @@ alias jctl="journalctl -p 3 -xb"
 # Recent installed packages
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 
-fastfetch
+if status is-interactive
+	fastfetch
+end
 
 alias "ionis"="nmcli --ask connection up IONIS"
 
 export PGDATA="$HOME/postgres_data"
 export PGHOST="/tmp"
 export PGPORT="5432"
+
+
+# FOR TIGER
+fish_add_path /usr/lib/llvm18/bin
+
 
 # BEGIN opam configuration
 # This is useful if you're using opam as it adds:
